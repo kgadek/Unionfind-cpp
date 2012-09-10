@@ -69,7 +69,7 @@ public:
 			swap(ppr,qqr);
 			swap(pp,qq);
 		}
-		if(T::uH.empty() || prio > T::uH.back().first) // linking phase
+		if(T::uH.empty() || prio >= T::uH.back().first) // linking phase
 			T::uH.push_back(unionDescr(prio, T::uStmp++));
 		if(pp == qq) return;
 		pp->p = qq;
